@@ -1,7 +1,7 @@
-import { NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import Header from "./header";
+import { NextPage } from 'next';
+import Head from 'next/head';
+import Header from './header';
+import type { ChangeEvent } from 'react';
 
 const Home: NextPage = () => {
   return (
@@ -17,31 +17,41 @@ const Home: NextPage = () => {
       <main className="flex min-h-screen flex-col items-center">
         <div className="container flex flex-col items-center gap-12 px-4 py-16">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-5xl">
-            <span className="text-[hsl(280,100%,70%)]">J</span>ohn 
-            <span className="text-[hsl(280,100%,70%)]"> a</span>s 
-            <span className="text-[hsl(280,100%,70%)]"> a</span> 
+            <span className="text-[hsl(280,100%,70%)]">J</span>ohn
+            <span className="text-[hsl(280,100%,70%)]"> a</span>s
+            <span className="text-[hsl(280,100%,70%)]"> a</span>
             <span className="text-[hsl(280,100%,70%)]"> S</span>ervice
           </h1>
-          <h2 className="text-2xl font-bold  text-white sm:text-3xl text-center">Join the Human as a Service (HaaS) <span className="text-[hsl(280,100%,70%)]">REVOLUTION!</span>
+          <h2 className="text-2xl font-bold text-white sm:text-3xl text-center">
+            Join the Human as a Service (HaaS) <span className="text-[hsl(280,100%,70%)]">REVOLUTION!</span>
           </h2>
 
           <div className="flex justify-center">
-          <button class="bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-lg shadow-lg mx-2"
-            onClick={() => alert("John has to set this up for auto email... he also needs an email...")}>
+            <button
+              className="bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-lg shadow-lg mx-2"
+              onClick={() =>
+                alert("John has to set this up for auto email... he also needs an email...")
+              }
+            >
               Hire John!!
-          </button>
-          <button class="bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-lg shadow-lg mx-2"
-            onClick={() => alert("Currently this option is not available. Consider hiring John to fix it for you? :p")}>
+            </button>
+            <button
+              className="bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-2 px-4 rounded-lg shadow-lg mx-2"
+              onClick={() =>
+                alert(
+                  "Currently this option is not available. Consider hiring John to fix it for you? :p"
+                )
+              }
+            >
               No Thanks!!
-          </button>
+            </button>
           </div>
-
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
             <div className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20">
               <h3 className="text-2xl font-bold">Automate →</h3>
               <div className="text-lg">
-                Remove manual 'busy work' by using over a decade of John's experience.
+                Remove manual &apos;busy work&apos; by using over a decade of John&apos;s experience.
               </div>
             </div>
             <div className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20">
